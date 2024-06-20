@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(skiemonys.jpg);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.facebook {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.facebook img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.juosta {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.juosta h1 {
+  font-size: 40px;
+  font-style: italic;
+}
+.mygtukai {
+  margin-top: 20px;
+}
+.mygtukai a[href="index.html"] {
+  position: fixed;
+  bottom: 30px; 
+  left: 20px;
+  z-index: 999;
+ background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.dropdown-menu {
+  top: auto !important;
+  bottom: 70% !important;
+}
+
+.mygtukai .dropdown-toggle {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.mygtukai .dropdown-toggle[href="index.html"] {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  
+}
+  .carousel-caption {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .carousel-caption h5 {
+	  font-size: 32px;
+  }
+@media screen and (max-width: 768px) {
+  .mygtukai .dropdown-toggle {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+  .facebook {
+    top: 10px;
+    right: 10px;
+  }
+}
+.dropdown-menu {
+  top: auto;
+  bottom: 100%;
+}
+.carousel-item img {
+  visibility: visible;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#image-slider {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 1s ease;
+}
+
+#image-slider img.active {
+  opacity: 1;
+}
+
+table {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.lankytinos-vietos {
+  background-color: transparent;
+  padding: 20px;
+}
+
+.lankytina-vieta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lankytina-vieta-img {
+  flex: 0 0 auto;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.lankytina-vieta-content {
+  flex: 1;
+}
+
+.lankytina-vieta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lankytina-vieta p {
+  margin-bottom: 10px;
+}
+
+.lankytina-vieta a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width: 768px) {
+  .facebook {
+    top: 10px;
+    right: 10px;
+  }
+
+  .juosta h1 {
+    font-size: 32px;
+  }
+
+  .mygtukai a {
+    font-size: 16px;
+  }
+
+
+  nav ul li {
+    margin-right: 10px;
+  }
+}
+
+.forma-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.forma {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+.forma h2 {
+  margin-bottom: 10px;
+}
+
+.forma label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.forma input[type="text"],
+.forma input[type="email"],
+.forma textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forma textarea {
+  height: 100px;
+}
+
+.forma input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forma input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  opacity: 1;
+}
